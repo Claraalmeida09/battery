@@ -1,0 +1,27 @@
+name: battery_ios
+description: A new Flutter plugin project.
+version: 0.0.1
+homepage:
+publish_to: none
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+  flutter: ">=2.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  battery_platform_interface:
+    path: ../battery_platform_interface
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  plugin_platform_interface: ^2.0.2
+
+flutter:
+  plugin:
+    platforms:
+      ios:
+        pluginClass: BatteryIosPlugin

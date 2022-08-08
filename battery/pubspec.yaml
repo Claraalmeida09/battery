@@ -1,0 +1,34 @@
+name: battery
+description: A new Flutter package project.
+version: 0.0.1
+homepage:
+publish_to: "none"
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+  flutter: ">=1.17.0"
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        default_package: battery_android
+      ios:
+        default_package: battery_ios
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  battery_platform_interface:
+    path: ../battery_platform_interface
+  battery_android:
+    path: ../battery_android
+  battery_ios:
+    path: ../battery_ios
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  plugin_platform_interface: ^2.1.2
